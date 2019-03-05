@@ -1,0 +1,17 @@
+#result {
+  display: none;
+}
+
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: yellow;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
