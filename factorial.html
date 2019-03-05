@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> factiorial </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <script type="text/javascript">
+  function fact(x) {
+     if(x==0) {
+        return 1;
+     }
+     return x * fact(x-1);
+  }
+
+  function run(number) {
+      alert(fact(parseInt(number, 10)));
+  }
+  </script>
+ </head>
+
+ <body>
+ <form name="f1">
+  Enter the Number  :<input type="text" length="8" name="txt1"><br>
+  <input type="button" value="Find factiorial" onclick="run(txt1.value)">
+  </form>
+ </body>
+</html>
