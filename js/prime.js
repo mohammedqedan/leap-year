@@ -1,28 +1,26 @@
 function isPrime(num) {
-
+  debugger;
   if (num === 2) {
     return true;
   }
   else if(num > 1){
     for (var i = 2;  i < num; i++) {
 
-      if (num % i !== 0 ) {
-        return true;
-      }
-
-      else if (num === i * i) {
-        return false
-      }
-
-      else {
+      if (num % i === 0 ) {
         return false;
       }
+
+      else if (num === (i * i)) {
+        return false
+      }
+       else {
+         return false;
+       }
     }
   }
   else {
-    return false;
+    return true;
   }
-
 }
 console.log(isPrime(121));
 // function
